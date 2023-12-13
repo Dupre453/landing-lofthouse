@@ -1,0 +1,48 @@
+/*убираем доп.значки*/
+[class*='copyrights-pane'] {
+  /*display:none !important*/
+
+  opacity:0;
+  transition: opacity 0.2s ease-in;
+}
+
+.map:hover [class*='copyrights-pane']{
+  opacity: 1;
+}
+
+
+/*создание своей карты*/
+
+[class*='gototech'] {
+  display: none !important;
+}
+/*цвет карты*/
+
+[class*='ground-pane'] {
+  filter: grayscale(1) sepia(20%);
+}
+
+/*balloon*/
+
+[class*='balloon__layout'], [class*='balloon__content'] {
+  background-color: #2D343C !important;
+  color: #FFFFFF;
+}
+[class*='balloon__tail']::after {
+  background-color: #2D343C !important;
+}
+
+[class*='balloon__layout__panel'] {
+  background-color: #2D343C !important;
+}
+
+[class*='balloon__layout'], [class*='balloon__content'] a {
+  color: #D4C17F !important;
+}
+
+[class*='balloon__close-button'] {
+  background: url('./../img/close.svg') 50% no-repeat !important;
+  height: 15px !important;
+  width: 15px !important;
+  margin: 10px 7px;
+}

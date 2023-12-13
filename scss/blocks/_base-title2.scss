@@ -1,0 +1,20 @@
+.title-1{
+  font-size: 36px;
+  font-family: $font-accent;
+  color: $accent;
+  font-weight: 700;
+
+  @include mediaTablet {
+    font-size: 25px;
+  }
+}
+.title-2{
+  font-size: 36px;
+  font-family: $font-accent;
+  color: $accent;
+  font-weight: 700;
+
+  @include mediaTablet {
+    font-size: 25px;
+  }
+}

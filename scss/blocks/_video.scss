@@ -1,0 +1,45 @@
+.video {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: 'IV';
+    left: calc(50% + 555px);
+    transform: translate(-50%, 0%);
+    line-height: 1.55;
+
+    @include decorNumber
+
+  }
+}
+
+.video__link {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.video__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease-in;
+
+  @include mediaTablet{
+    width: 80px;
+    height: 80px;
+  }
+}
+.video__link:hover .video__icon{
+  transform: translate(-50%,-50%) scale(1.1);
+  filter: saturate(1.8);
+}
+
+
+.video__img{
+
+
+}
